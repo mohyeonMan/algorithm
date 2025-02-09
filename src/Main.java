@@ -1,7 +1,7 @@
-import questions.programmers.보석_쇼핑;
+import questions.programmers.파괴되지_않은_건물;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        new 보석_쇼핑().solution();
+        new 파괴되지_않은_건물().solution();
     }
 }
