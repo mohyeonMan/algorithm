@@ -1,5 +1,7 @@
 package questions.programmers;
 
+import java.util.Arrays;
+
 public class 비밀지도 {
     public void execute(){
 
@@ -43,6 +45,8 @@ public class 비밀지도 {
         }
         
         String[] answer = resultArr;
+
+        System.out.println(Arrays.toString(answer));
         
     }
     

@@ -2,7 +2,6 @@ package questions.programmers;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 
 /**
@@ -16,7 +15,6 @@ public class 양과늑대 {
         int[] info = {0,0,1,1,1,0,1,0,1,0,1,1};
         int[][] edges = {{0,1},{1,2},{1,4},{0,8},{8,7},{9,10},{9,11},{4,3},{6,5},{4,6},{8,9}};
 
-        
         buildTree(info, edges);
 
         int answer = 0;
@@ -55,7 +53,6 @@ public class 양과늑대 {
     }
 
     private static void buildTree(final int[] info, final  int[][] edges){
-        tree = new ArrayList[info.length];
 
         for (int i = 0; i < tree.length; i++) {
             tree[i] = new ArrayList<>();

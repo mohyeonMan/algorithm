@@ -1,7 +1,5 @@
 package questions.programmers;
 
-import java.util.HashMap;
-
 public class 기사단원의무기 {
     
     public void execute(){
