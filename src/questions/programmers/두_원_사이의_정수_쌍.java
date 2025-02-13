@@ -1,7 +1,5 @@
 package questions.programmers;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
 
 /*
     r1	r2	result
@@ -12,53 +10,26 @@ import java.util.Queue;
     원 방정식을 사용해야할 것.
  */ 
 public class 두_원_사이의_정수_쌍 {
-    int min,max;
-    boolean visited[][];
-    int[] offsetX = {1,0};
-    int[] offsetY = {0,1};
     
     public void solution(){
         int r1 = 2;
         int r2 = 3;
+        long answer = (long)(r2-r1+1)*4L;
 
-        min = r1;
-        max = r2;
-        visited = new boolean[r2+2][r2+2];
+        for (int x = 1; x <= r2; x++) {
+            int yMax = (int)getY(x, r2);
+            int yMin = (int)getY(x, r1);
+            answer += (long)(yMax - yMin)*4;
 
-        Queue<int[]> queue = new ArrayDeque<>();
-        queue.add(new int[]{0,0});
-        long answer = 0;
-
-        while (!queue.isEmpty()){
-            
-            int[] c = queue.poll();
-            int y = c[0];
-            int x = c[1];
-            
-            for(int o = 0 ; o < 2; o++){
-                int ny = y + offsetY[o];
-                int nx = x + offsetX[o];
-                
-                if(visited[ny][nx]) continue;
-                visited[ny][nx] = true;
-                
-                double length = getLength(ny, nx);
-                if(length <= max){
-                    queue.add(new int[]{ny,nx});
-                    if(min <= length && nx != 0){
-                        System.out.println(ny +", "+nx );
-                        answer ++;
-                    }
-                }
-            }
+            if(x<r1 && getY(x, r1)%1 ==0) answer += 4;
         }
 
-        System.out.println(answer * 4);
-
+        System.out.println(answer);
     }
 
-    private double getLength(int y, int x){
-        return Math.sqrt(x * x + y * y);
+    // x^2 + y^2 = r2 원의 방정식 이행한 형태태
+    private double getY(int x, int r){
+        return Math.sqrt((long)r*r-(long)x*x);
     }
 
 
