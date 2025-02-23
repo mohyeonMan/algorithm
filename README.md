@@ -1,18 +1,9 @@
-## Getting Started
+# 🧩 알고리즘 연습 리포지토리
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+해당 리포는 **알고리즘 문제 풀이**를 기록하기 위한 용도입니다.  
+알고리즘 풀이는 성장 과정이면서, 좋은 놀잇감이기도 합니다.
 
-## Folder Structure
+알고리즘 플랫폼별로 패키징되어 있으며, 일부 문제의 **자세한 풀이**는 아래 블로그에서 확인할 수 있습니다.
 
-The workspace contains two folders by default, where:
+📚 **블로그:** [https://mohyeonman.tistory.com](https://mohyeonman.tistory.com)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
