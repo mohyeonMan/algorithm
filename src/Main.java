@@ -1,7 +1,7 @@
-import questions.bakjoon.일곱_난쟁이;
-import questions.programmers.기사단원의무기;
+import questions.programmers.의상;
+import questions.programmers.전화번호_목록;
 public class Main {
     public static void main(String[] args) throws Exception {
-        new 기사단원의무기().solution();
+        new 의상().solution();
     }
 }
