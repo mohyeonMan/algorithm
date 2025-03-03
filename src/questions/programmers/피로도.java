@@ -9,12 +9,12 @@ import java.util.Queue;
  */
 public class 피로도 {
 
-    int max = 0;
+    int max;
     int len;
     boolean[] visited;
     int[][] dungeons;
 
-    public void solution(){
+    public int solution(){
         int k = 80;
         int[][] dungeons = {{80,20},{50,40},{30,10}};
 
@@ -25,7 +25,7 @@ public class 피로도 {
 
         dfs(k, 0);
 
-        System.out.println(max);
+        return max;
     }
 
     private void dfs(int currentK, int count){
