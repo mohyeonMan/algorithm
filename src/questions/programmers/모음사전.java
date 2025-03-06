@@ -27,13 +27,10 @@ public class 모음사전 {
         // Collections.sort(dict);
 
         for(int i = 0; i < dict.size(); i++){
-            System.out.println(dict.get(i));
             if(dict.get(i).equals(word)) {
-                System.out.println(i);
                 return i;
             }
         }
-
         
         return -1;
     }
