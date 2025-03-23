@@ -1,14 +1,15 @@
-import questions.programmers.네트워크;
-import questions.programmers.다리를_지나는_트럭;
-import questions.programmers.다리를_지나는_트럭2;
-import questions.programmers.더_맵게;
-import questions.programmers.디스크_컨트롤러;
-import questions.programmers.이중_우선순위_큐;
-import questions.programmers.조이스틱;
-import questions.programmers.체육복;
-import questions.programmers.큰_수_만들기;
+import questions.programmers.게임_맵_최단거리;
+import questions.programmers.구명보트;
+import questions.programmers.단속카메라;
+import questions.programmers.단어_변환;
+import questions.programmers.방의_개수;
+import questions.programmers.섬_연결하기;
+import questions.programmers.아이템_줍기;
+import questions.programmers.여행경로;
+import questions.programmers.여행경로2;
+
 public class Main {
     public static void main(String[] args) throws Exception {
-        new 큰_수_만들기().solution();
+        new 방의_개수().solution();
     }
 }
