@@ -3,7 +3,8 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextLong();
+        System.out.print(n * 4);
     }
 }
