@@ -5,5 +5,6 @@
         "lib/**/*.jar"
     ],
     "BOJ-Tester.defaultPath": "/Users/jihoon/Desktop/workspace/study/algorithm/src/questions/bakjoon",
-    "BOJ-Tester.defaultLanguage": "java"
+    "BOJ-Tester.defaultLanguage": "java",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
